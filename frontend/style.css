@@ -1,0 +1,64 @@
+body {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+
+
+.forma {
+  width: 350px;
+  border: 1px solid black;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: fit-content;
+}
+
+.margin-10 {
+  margin: 10px;
+}
+
+.btn-upisi {
+  grid-area: 5 / 1 / 6 / 3;
+}
+
+.checkboxes {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.pretraga {
+  display: flex;
+  flex-direction: column;
+}
+
+.student {
+  border: 1px solid black;
+  width: 100px;
+  height: 200px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rezultati {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ocene {
+  display: grid;
+  column-gap: 5px;
+  height: 130px;
+  justify-items: end;
+  align-items: end;
+}
+
+.ocena {
+  width: 100%;
+}
+
+.ime-studenta {
+  text-align: center;
+}
