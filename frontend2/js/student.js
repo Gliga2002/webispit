@@ -7,37 +7,42 @@ export default class Student {
   }
 
   draw(ulElContainer, predmetiIDS, predmeti) {
-    const cardEl = document.createElement("li");
-    cardEl.classList.add("card");
+    const cardEl = document.createElement('li');
+    cardEl.classList.add('card');
 
-    const p = document.createElement("p");
+    const p = document.createElement('p');
     p.innerText = this.imeprezime;
 
     cardEl.appendChild(p);
 
     const oceneEl = document.createElement('div');
     oceneEl.classList.add('ocene');
+    // TODO:
 
+    // jedinstveni broj predmeta
     const n = predmetiIDS.length;
+    // racunaj sirinu ocene
     const w = (oceneEl.style.width - oceneEl.style.columnGap * (n + 1)) / n;
 
-    oceneEl.style.gridTemplateColumns = `repeat(${n}, ${w})`;
+    oceneEl.style.gridTemplateColumns = `repeat(${n}, 1fr)`;
 
-    this.ocene.forEach(oceneEl => {
-      let predmet = predmeti.find(p => p.naizv === oceneEl.predmet);
+    // iscrtavanje ocena
+    this.ocene.forEach((o) => {
+      let predmet = predmeti.find((p) => p.naziv === o.predmet);
       let color = predmet.color;
-      let indeksPredmeta = predmetiIDS.findIndex(id => id === predmet.id);
+      let indeksPredmeta = predmetiIDS.findIndex((id) => id === predmet.id);
       let kolona = indeksPredmeta + 1;
 
       let h = o.vrednost * 10;
 
       let divOcena = document.createElement('div');
       divOcena.style.backgroundColor = color;
-      divOcena.style.gridArea = `1 / ${kolona} / 2 / ${kolona + 1}`
-      divOcena.style.height = `${h}%`;
+      divOcena.style.gridArea = `1 / ${kolona} / 2 / ${kolona + 1}`;
+      divOcena.style.height = `${h}px`;
       oceneEl.appendChild(divOcena);
     });
 
+    // TODO:
 
     cardEl.appendChild(oceneEl);
 
@@ -45,6 +50,6 @@ export default class Student {
   }
 
   dodajOcenu(ocena) {
-    this.ocene = [...this.ocene, ocena]
+    this.ocene = [...this.ocene, ocena];
   }
 }

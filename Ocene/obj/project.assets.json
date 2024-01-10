@@ -4428,24 +4428,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\KORISNIK\\.nuget\\packages\\": {}
+    "C:\\Users\\Dejan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\KORISNIK\\Desktop\\DrugiKolokvijum\\Ocene\\Ocene.csproj",
+      "projectUniqueName": "C:\\Users\\Dejan\\Desktop\\webispit\\Ocene\\Ocene.csproj",
       "projectName": "Ocene",
-      "projectPath": "C:\\Users\\KORISNIK\\Desktop\\DrugiKolokvijum\\Ocene\\Ocene.csproj",
-      "packagesPath": "C:\\Users\\KORISNIK\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\KORISNIK\\Desktop\\DrugiKolokvijum\\Ocene\\obj\\",
+      "projectPath": "C:\\Users\\Dejan\\Desktop\\webispit\\Ocene\\Ocene.csproj",
+      "packagesPath": "C:\\Users\\Dejan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Dejan\\Desktop\\webispit\\Ocene\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\KORISNIK\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Dejan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4506,7 +4508,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
